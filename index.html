@@ -1,12 +1,799 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    EFNOMUNDO AUTOMATICO TESTE 1
-</body>
+<html lang="en" style="--vh: 6.67px">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="React Personal Portfolio" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <title>EF no Mundo</title>
+    <link href="/static/css/chunk.css" rel="stylesheet" />
+    <link href="/static/css/main_chunk.css" rel="stylesheet" />
+    <style type="text/css">
+      .transform-component-module_wrapper__1_Fgj {
+        position: relative;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        overflow: hidden;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+        margin: 0;
+        padding: 0;
+      }
+      .transform-component-module_content__2jYgh {
+        display: flex;
+        flex-wrap: wrap;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        transform-origin: 0% 0%;
+      }
+      .transform-component-module_content__2jYgh img {
+        pointer-events: none;
+      }
+    </style>
+    <style></style>
+    <style type="text/css">
+      .vue-notification-group {
+        display: block;
+        position: fixed;
+        z-index: 5000;
+      }
+      .vue-notification-wrapper {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .notification-title {
+        font-weight: 600;
+      }
+      .vue-notification-template {
+        background: #fff;
+      }
+      .vue-notification,
+      .vue-notification-template {
+        display: block;
+        box-sizing: border-box;
+        text-align: left;
+      }
+      .vue-notification {
+        font-size: 12px;
+        padding: 10px;
+        margin: 0 5px 5px;
+        color: #fff;
+        background: #44a4fc;
+        border-left: 5px solid #187fe7;
+      }
+      .vue-notification.warn {
+        background: #ffb648;
+        border-left-color: #f48a06;
+      }
+      .vue-notification.error {
+        background: #e54d42;
+        border-left-color: #b82e24;
+      }
+      .vue-notification.success {
+        background: #68cd86;
+        border-left-color: #42a85f;
+      }
+      .vn-fade-enter-active,
+      .vn-fade-leave-active,
+      .vn-fade-move {
+        transition: all 0.5s;
+      }
+      .vn-fade-enter,
+      .vn-fade-leave-to {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body
+    class="loaded"
+    data-aos-easing="ease"
+    data-aos-duration="100"
+    data-aos-delay="0"
+  >
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="shane_tm_all_wrap">
+        <div
+          class="scroll_up aos-init aos-animate"
+          data-aos="fade-left"
+          data-aos-duration="1200"
+        >
+          <a href="#root"><img src="/img/arrow-up.svg" alt="scroll up" /></a>
+        </div>
+        <div class="home-two">
+          <div class="shane_tm_topbar">
+            <div class="topbar_inner opened">
+              <div class="logo">
+                <a aria-current="page" class="active" href="/"
+                  ><img src="/img/logo/new/logo-travel.png" height="50px" alt="partners brand"
+                /></a>
+              </div>
+              <div class="menu">
+                <ul class="anchor_nav">
+                  <li class=""><a href="#home">Home</a></li>
+                  <li class=""><a href="#about">Sobre</a></li>
+                  <li class=""><a href="#contact">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="shane_tm_mobile_menu">
+            <div class="topbar_inner">
+              <div class="container bigger">
+                <div class="topbar_in">
+                  <div class="logo">
+                    <a aria-current="page" class="active" href="/"
+                      ><img src="/img/logo/new/logo-travel.png" height="50px" alt="partners brand"
+                    /></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-two">
+            <div class="shane_tm_hero" id="home" data-style="three">
+              <div class="background">
+                <div
+                  class="image"
+                  style="background-image: url('img/slider/1.webp')"
+                ></div>
+              </div>
+              <div class="container">
+                <div class="content">
+                  <div class="name_wrap">
+                    <h3>
+                      <span>EF </span> no Mundo<span class="overlay_effect"></span>
+                    </h3>
+                  </div>
+                  <div class="job_wrap">
+                    <span class="job"
+                      >Conhecendo o mundo juntos!<span class="overlay_effect"></span
+                    ></span>
+                  </div>
+                  <div class="job_wrap sociallo">
+                    <span class="job"
+                      ><ul class="social social-default position-relative">
+                        <!-- <li>
+                          <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                              class="svg"
+                              src="/img/svg/social/facebook.svg"
+                              alt="social"
+                          /></a>
+                        </li> -->
+                        <!-- <li>
+                          <a
+                            href="https://twitter.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                              class="svg"
+                              src="/img/svg/social/twitter.svg"
+                              alt="social"
+                          /></a>
+                        </li> -->
+                        <li>
+                          <a
+                            href="https://www.instagram.com/efnomundo"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                              class="svg"
+                              src="/img/svg/social/instagram.svg"
+                              alt="social"
+                          /></a>
+                        </li>
+                        <!-- <li>
+                          <a
+                            href="https://dribbble.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                              class="svg"
+                              src="/img/svg/social/dribbble.svg"
+                              alt="social"
+                          /></a>
+                        </li> -->
+                        <li>
+                          <a
+                            href="https://www.tiktok.com/@efnomundo"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                              class="svg"
+                              src="/img/svg/social/tik-tok.svg"
+                              alt="social"
+                          /></a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/@efnomundo"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                              class="svg"
+                              src="/img/svg/social/youtube.svg"
+                              alt="social"
+                          /></a>
+                        </li>
+                      </ul>
+                      <span class="overlay_effect"></span
+                    ></span>
+                  </div>
+                </div>
+                <div class="shane_tm_down loaded">
+                  <div class="line_wrapper"><div class="line"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shane_tm_section" id="about">
+            <div class="shane_tm_about">
+              <div class="container">
+                <div class="about_inner">
+                  <div class="left">
+                    <div
+                      class="image aos-init aos-animate"
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                    >
+                      <img src="/img/placeholders/1-1.webp" alt="placeholder" />
+                      <div
+                        class="main"
+                        style="background-image: url('img/about/sobre.webp')"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div
+                      class="shane_tm_title aos-init aos-animate"
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                    >
+                      <span>Sobre nós</span>
+                      <h3>
+                        Everton & Fabiany
+                      </h3>
+                    </div>
+                    <div
+                      class="text aos-init aos-animate"
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                    >
+                      <p>
+                        Somos um casal muito sonhador, e sempre buscamos aventuras. Pensando nisso decidimos que em 2023 iriamos começar a nossa jornada para conhecer o mundo, para isso iremos começar por Pernambuco, nosso querido estado.
+                      </p>
+                    </div>
+                    <div
+                      class="shane_tm_button aos-init aos-animate"
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                    >
+                      <!-- <a href="img/resume/resume.webp" download=""
+                        >Download CV</a
+                      > -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shane_tm_section" id="portfolio">
+            <div class="shane_tm_portfolio">
+              <div class="container">
+                <div class="positon-relative">
+                  <div class="shane_tm_title">
+                    <div class="title_flex">
+                      <div class="left">
+                        <span>TOP 6</span>
+                        <h3>Lugares mais lindos visitados</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio_filter">
+                    <div class="react-tabs" data-rttabs="true">
+
+                      <div class="portfolio_list has-effect">
+                        <div>
+                          <div
+                            class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+                            role="tabpanel"
+                            id="react-tabs-1"
+                            aria-labelledby="react-tabs-0"
+                          >
+                            <ul class="gallery_zoom">
+                              <li
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="0"
+                                class="aos-init aos-animate"
+                              >
+                                <div class="inner">
+                                  <div
+                                    class="entry shane_tm_portfolio_animation_wrap"
+                                  >
+                                    <a href="/img/portfolio/porto-de-galinhas.webp"
+                                      ><img
+                                        src="/img/portfolio/porto-de-galinhas.webp"
+                                        alt="Porto de Galinhas"
+                                        srl_elementid="0"
+                                    /></a>
+                                  </div>
+                                  <div class="mobile_title">
+                                    <h3>
+                                      <a
+                                        href="#"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                      >
+                                        Porto de Galinhas</a
+                                      >
+                                    </h3>
+                                    <span>PE</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="100"
+                                class="aos-init aos-animate"
+                              >
+                                <div class="inner">
+                                  <div
+                                    class="entry shane_tm_portfolio_animation_wrap"
+                                  >
+                                    <a href="/img/portfolio/Muro_Alto.webp"
+                                      ><img
+                                        src="/img/portfolio/Muro_Alto.webp"
+                                        alt="Branding"
+                                        srl_elementid="1"
+                                    /></a>
+                                  </div>
+                                  <div class="mobile_title">
+                                    <h3>
+                                      <a
+                                        href="#"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        >Muro Alto</a
+                                      >
+                                    </h3>
+                                    <span>PE</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="200"
+                                class="aos-init aos-animate"
+                              >
+                                <div class="inner">
+                                  <div
+                                    class="entry shane_tm_portfolio_animation_wrap"
+                                  >
+                                    <a href="/img/portfolio/ilha-de-santo-aleixo.webp"
+                                      ><img
+                                        src="/img/portfolio/ilha-de-santo-aleixo.webp"
+                                        alt="Photography"
+                                        srl_elementid="2"
+                                    /></a>
+                                  </div>
+                                  <div class="mobile_title">
+                                    <h3>
+                                      <a
+                                        href="#"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        >Ilha de Santo Aleixo</a
+                                      >
+                                    </h3>
+                                    <span>PE</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="0"
+                                class="aos-init aos-animate"
+                              >
+                                <div class="inner">
+                                  <div
+                                    class="entry shane_tm_portfolio_animation_wrap"
+                                  >
+                                    <a href="/img/portfolio/Pontal-de-Maracaipe.webp"
+                                      ><img
+                                        src="/img/portfolio/Pontal-de-Maracaipe.webp"
+                                        alt="Design"
+                                        srl_elementid="3"
+                                    /></a>
+                                  </div>
+                                  <div class="mobile_title">
+                                    <h3>
+                                      <a
+                                        href="#"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        >Pontal de Maracaipe</a
+                                      >
+                                    </h3>
+                                    <span>PE</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="100"
+                                class="aos-init aos-animate"
+                              >
+                                <div class="inner">
+                                  <div
+                                    class="entry shane_tm_portfolio_animation_wrap"
+                                  >
+                                    <a href="/img/portfolio/praia-do-cupe.webp"
+                                      ><img
+                                        src="/img/portfolio/praia-do-cupe.webp"
+                                        alt="Photography"
+                                        srl_elementid="4"
+                                    /></a>
+                                  </div>
+                                  <div class="mobile_title">
+                                    <h3>
+                                      <a
+                                        href="#"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                      >
+                                        Praia do Cupe</a
+                                      >
+                                    </h3>
+                                    <span>PE</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li
+                                data-aos="fade-right"
+                                data-aos-duration="1200"
+                                data-aos-delay="200"
+                                class="aos-init aos-animate"
+                              >
+                                <div class="inner">
+                                  <div
+                                    class="entry shane_tm_portfolio_animation_wrap"
+                                  >
+                                    <a href="/img/portfolio/Serrambi.webp"
+                                      ><img
+                                        src="/img/portfolio/Serrambi.webp"
+                                        alt="Branding"
+                                        srl_elementid="5"
+                                    /></a>
+                                  </div>
+                                  <div class="mobile_title">
+                                    <h3>
+                                      <a
+                                        href="#"
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        >Serrambi</a
+                                      >
+                                    </h3>
+                                    <span>PE</span>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="react-tabs__tab-panel"
+                            role="tabpanel"
+                            id="react-tabs-3"
+                            aria-labelledby="react-tabs-2"
+                          ></div>
+                          <div
+                            class="react-tabs__tab-panel"
+                            role="tabpanel"
+                            id="react-tabs-5"
+                            aria-labelledby="react-tabs-4"
+                          ></div>
+                          <div
+                            class="react-tabs__tab-panel"
+                            role="tabpanel"
+                            id="react-tabs-7"
+                            aria-labelledby="react-tabs-6"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="shane_tm_section">
+            <div class="shane_tm_skills">
+              <div class="container">
+                <div class="skills_inner">
+                  <div
+                    class="left aos-init aos-animate"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <div class="shane_tm_title">
+                      <h3>I have high skills in developing and programming</h3>
+                    </div>
+                    <div class="text">
+                      <p>
+                        I am working on a professional, visually sophisticated
+                        and technologically proficient, responsive and
+                        multi-functional personal portfolio template Shane.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="right aos-init aos-animate"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <div class="tokyo_progress">
+                      <div class="progress_inner">
+                        <span
+                          ><span class="label">Web Development</span
+                          ><span class="number">95%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar">
+                            <div class="bar_in" style="width: 95%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress_inner">
+                        <span
+                          ><span class="label">Brand Identity</span
+                          ><span class="number">80%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar">
+                            <div class="bar_in" style="width: 80%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress_inner">
+                        <span
+                          ><span class="label">Logo Design</span
+                          ><span class="number">90%</span></span
+                        >
+                        <div class="background">
+                          <div class="bar">
+                            <div class="bar_in" style="width: 90%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="shane_tm_section">
+            <div class="shane_tm_business_video">
+              <div class="bg">
+                <div
+                  class="image jarallax"
+                  style="background-image: url('img/video/2.webp')"
+                ></div>
+                <div class="overlay"></div>
+              </div>
+              <div class="content">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  class="aos-init aos-animate"
+                >
+                  <span class="rounded"></span>
+                </div>
+                <h3
+                  class="text aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="50"
+                >
+                  Quer conhecer um pouco mais das nossas aventuras?
+                </h3>
+                <div
+                  class="shane_tm_video_button aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="100"
+                >
+                  <a target="_blank" href="https://www.youtube.com/@efnomundo">Assista Nossos Vídeos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shane_tm_section" id="news">
+            <div class="shane_tm_news">
+              <div class="container">
+                <div class="shane_tm_title">
+                  <span>Novos</span>
+                  <h3>Últimos lugares visitados</h3>
+                </div>
+                <div class="news_list">
+                  <ul>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      class="aos-init aos-animate"
+                    >
+                      <div class="list_inner">
+                        <div class="image">
+                          <img src="/img/placeholders/4-3.webp" alt="thumb" />
+                          <div
+                            class="main"
+                            style="background-image: url('img/portfolio/Muro_Alto.webp')"
+                          ></div>
+                        </div>
+                        <div class="details">
+                          <h3 class="title">
+                            Muro Alto - PE
+                          </h3>
+                          <p class="date">
+                            01 Jan 2023
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="150"
+                      class="aos-init aos-animate"
+                    >
+                      <div class="list_inner">
+                        <div class="image">
+                          <img src="/img/placeholders/4-3.webp" alt="thumb" />
+                          <div
+                            class="main"
+                            style="background-image: url('img/portfolio/ilha-de-santo-aleixo.webp')"
+                          ></div>
+                        </div>
+                        <div class="details">
+                          <h3 class="title">
+                            Ilha de Santo Aleixo - PE
+                          </h3>
+                          <p class="date">
+                            31 DEZ 2022
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate"
+                    >
+                      <div class="list_inner">
+                        <div class="image">
+                          <img src="/img/placeholders/4-3.webp" alt="thumb" />
+                          <div
+                            class="main"
+                            style="background-image: url('img/portfolio/porto-de-galinhas.webp')"
+                          ></div>
+                        </div>
+                        <div class="details">
+                          <h3 class="title">
+                            Porto de Galinhas - PE
+                          </h3>
+                          <p class="date">
+                            30 DEZ 2022
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shane_tm_section" id="contact">
+            <div
+              class="shane_tm_talk bg_image_props"
+              style="background-image: url('img/callto-action/foto.webp')"
+            >
+              <div class="shape">
+                <img
+                  class="svg"
+                  src="/img/svg/paper.svg"
+                  alt="partners brand"
+                />
+              </div>
+              <div class="background" id="talk">
+                <a class="player"></a>
+                <div class="overlay"></div>
+              </div>
+              <div class="talk_inner">
+                <div
+                  class="text aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  <h3>Nós ajude nesse projeto!</h3>
+                </div>
+                <div
+                  class="button aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="100"
+                >
+                  <a href="https://www.instagram.com/efnomundo" class="white-fill-bg">Contribuir com o projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shane_tm_section">
+            <div class="shane_tm_copyright">
+              <div class="container">
+                <div class="inner">
+                  <p>
+                    © 2023 by
+                    <a
+                      href="https://www.instagram.com/digitalizando.empresas/"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Digitalizando</a
+                    >. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/chunk.js"></script>
+    <script src="/static/js/main_chunk.js"></script>
+    <div class="ReactModalPortal"></div>
+    <div class="ReactModalPortal"></div>
+    <div class="ReactModalPortal"></div>
+    <div class="ReactModalPortal"></div>
+  </body>
 </html>
