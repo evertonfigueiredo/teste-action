@@ -10,6 +10,12 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
+      uses: actions/setup-node@v1
+      with:
+        node-version: "16.x"
+    
+    - name: Build web-app
+        run: npm run build
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -17,4 +23,5 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
+        publish_dir: ./build
         server-dir: public/
